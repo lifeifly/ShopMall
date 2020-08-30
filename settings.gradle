@@ -1,0 +1,3 @@
+rootProject.name='ShopMall'
+include ':app', ':banner'
+include ':addsubactivity'

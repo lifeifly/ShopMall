@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#4454" />
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_rg_home"
+            style="@style/mainRgButtonStyle"
+            android:drawableTop="@drawable/main_rg_button_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/main_rg_type"
+            style="@style/mainRgButtonStyle"
+            android:drawableTop="@drawable/main_rg_button_type_selector"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/main_rg_community"
+            style="@style/mainRgButtonStyle"
+            android:drawableTop="@drawable/main_rg_button_community_selector"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/main_rg_cart"
+            style="@style/mainRgButtonStyle"
+            android:drawableTop="@drawable/main_rg_button_cart_selector"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/main_rg_user"
+            style="@style/mainRgButtonStyle"
+            android:drawableTop="@drawable/main_rg_button_user_selector"
+            android:text="个人中心" />
+    </RadioGroup>
+</LinearLayout>
